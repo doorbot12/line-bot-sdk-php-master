@@ -1,0 +1,38 @@
+{
+  "name": "line-bot-sdk-php-master",
+  "description": "doorbot",
+  "scripts": {
+    "postdeploy": "bot.php",
+    "pr-predestroy": "bot.php"
+  },
+  "env": {
+    "APIAI_ACCESS_TOKEN": {
+      "required": true
+    },
+    "APIAI_LANG": {
+      "required": true
+    },
+    "LINE_CHANNEL_ID": {
+      "required": true
+    },
+    "LINE_CHANNEL_SECRET": {
+      "required": true
+    },
+    "LINE_MID": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
